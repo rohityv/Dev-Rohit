@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title> Dev-rohit </title>
+                  <!-- For responsive devices -->
+    <meta name="viewport" content="width=device-width, initial-scale = 1" />
+                 <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                      <!-- Google Font Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Shippori+Mincho&display=swap" rel="stylesheet">
+                <!-- External Css File -->
+    <link rel ="stylesheet" href = "index.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar-container">
+        <div class = "menu-icon">
+        <a href="#">
+          <div></div>
+          <div></div>
+          <div></div>
+        </a>
+      </div>
+        <ul class = "hor-navbar">
+          <li class = "active"><a href="index.html" ><i class="fa fa-home"></i>Home</a></li>
+          <li><a href="About.html" ><i class="fa fa-user"></i>About</a></li>
+          <li><a href="JsProjects.html"><i class="fa fa-pencil"></i>Project</a></li>
+          <li><a href="#" onclick="SearchFunc()"><i class="fa fa-search"></i>Search</a></li>
+          <li><a href="Contact.html" onclick="ContFunc()"><i class="fa fa-phone"></i>Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="toggle-navbar">
+        <ul class = "ver-navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="JsProjects.html">Js-Projects</a></li>
+          <li><a href="https://github.com/rohityv/React-Project.git">React.js projects</a></li>
+          <li><a href="#">Css Projects</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="#" onclick="SearchFunc()">Search</a></li>
+        </ul>
+      </nav>
+      <div class="Search-btn">
+            <div class="fa fa-search"></div>
+            <input type="text" placeholder="Search">
+            <div class="fa fa-times"></div>
+      </div>
+    <header>
+    <main>
+        <section class = "Contact-header All-header">
+              <div class="web-logo"><img src="web-logo.png" alt="...Loading" /></div>
+              <h1>||CONTACT||</h1>
+        </section>
+        <section class = "contact-content">
+              <div class="contact-left">
+                  <div class = "contact-left-icon">
+                      <span class="fa fa-home"></span>
+                      <span class="fa fa-phone"></span>
+                      <span class="fa fa-envelope"></span>
+                  </div>
+                  <div class = "contact-left-mess">
+                      <div>
+                          <h2>Goregaon Mumbai, 400065</h2>
+                          <small>Mumbai, Maharashtra, India.</small>
+                      </div>
+                      <div>
+                          <h2>+919769950552/7021852672</h2>
+                          <small>Available Any Time.</small>
+                    </div>
+                      <div>
+                          <h2>rohityadav9769@gmail.com</h2>
+                          <small>Email Me To Contact.</small>
+                      </div>
+                  </div>
+              </div>
+              <div class="contact-right">
+                  <form class="comment-form" action="index.html" method="post">
+                      <h2>Leave a comment:</h2>
+                      <input type="text"  placeholder="Enter your name">
+                      <input type="email"  placeholder="Enter email address">
+                      <input type="text"  placeholder="Enter your subject">
+                      <textarea name="name" rows="8" cols="80" placeholder="Message"></textarea>
+                      <button type="button" name="button">Send Message</button>
+                  </form>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <h3>Follow me <i class = "fa fa-hand-o-down"></i>:</h3>
+        <div>
+          <a href="https://www.instagram.com/rohit_yv_/"><i class ="fa fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/rohit-yadav-69a493144"><i class ="fa fa-linkedin"></i></a>
+          <a href="https://github.com/rohityv/Dev-rohit.git"><i class ="fa fa-github"></i></a>
+          <a href="https://www.twitter.com/rohi8_cz/"><i class ="fa fa-twitter"></i></a>
+      </div>
+    </footer>
+    <script src = "index.js"></script>
+  </body>
+</html>
