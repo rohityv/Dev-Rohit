@@ -503,7 +503,7 @@ footer div a:hover{
     /*------All-Pages-header------*/
 .All-header h1{
   margin: .6rem;
-  font-size: 2.6rem;
+  font-size: 2rem;
   }
 .menu-icon{
   width: 100%;
@@ -555,7 +555,7 @@ text-align: center;
  margin: 0 1.8rem 0 1rem;
 }
 .contact-left-mess h2{
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
     /* ----Search----- */
 .Search-btn{
@@ -564,12 +564,15 @@ text-align: center;
 }
     /* ----JavaScript projects----- */
 .project-sections{
+    background: green;
     margin: 0;
     grid-template-columns: 100%;
     grid-template-rows: 35rem 30rem 40rem 20rem;
 }
 .project-section{
   margin:0;
+  background: red;
+
 }
 .project-sections h2{
   font-size: 2rem;
