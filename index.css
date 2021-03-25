@@ -375,6 +375,8 @@ text-align: left;
   flex-direction: column;
   margin: 0 15% 0 15%;
   padding: .5rem;
+  box-shadow: 2px 2px 2px #ddd;
+  border: 1px solid #ddd;
 }
 .project-sections h3{
   border-bottom: 1px solid dimgrey;
@@ -564,15 +566,12 @@ text-align: center;
 }
     /* ----JavaScript projects----- */
 .project-sections{
-    background: green;
     margin: 0;
     grid-template-columns: 100%;
     grid-template-rows: 35rem 30rem 47rem 20rem;
 }
 .project-section{
   margin:0;
-  background: red;
-
 }
 .project-sections h2{
   font-size: 2rem;
