@@ -37,6 +37,7 @@ p{
 }
 small{
   font-family: small-tag;
+  marin:auto 5px;
 }
 :root{
   --nav-background: rgba(85,214,178,1);
@@ -205,7 +206,7 @@ button, input{
   border: 1px solid rgb(32, 24, 24);
 }
 .grid-sections .grid-section p{
-  margin: 20px 10px;
+  margin: 20px 5px;
 }
 .grid-sections .grid-section div{
   text-align: center;
