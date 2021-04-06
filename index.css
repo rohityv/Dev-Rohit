@@ -154,7 +154,24 @@ small{
 .All-header .web-logo img{
   width: 8rem;
   border-radius: 50%;
+  
+  animation: weblogo 2s linear 1;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  visibility: hidden;
 }
+@keyframes weblogo {
+  from{
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+    to{
+      transform: translateX(0);
+      visibility: visible;
+  }
+}
+
+
 .All-header h1{
   font-size: 3rem;
 }
@@ -259,8 +276,25 @@ text-align: left;
 }
 .about-right img{
   height: 20rem;
+  
+  
+  animation: image 2s linear 1;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  visibility: hidden;
 }
-                      /* ------------Contact---------- */
+@keyframes image {
+  from{
+    transform: translateX(100%);
+    visibility: visible;
+  }
+    to{
+      transform: translateX(0);
+      visibility: visible;
+  }
+}
+
+                     /* ------------Contact---------- */
 
 .Contact-header{
   min-height: 46vh;
@@ -512,7 +546,27 @@ footer div a:hover{
   font-weight: bold;
   text-shadow: 2px 2px 2px black;
   font-family:Nvabar-mobile;
+  
+  animation: menuicon 1s linear 1;
+  animation-delay: 1s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
   }
+  @keyframes menuicon {
+
+    from{
+      transform: translateY(-100%);
+      visibility: visible;
+    }
+    to{
+      transform: translateY(0%);
+      visibility: visible;
+    }
+
+  }
+ 
+  
+  
 .menu-icon a div{
   background-color: rgb(102, 102, 201);
   box-shadow: 1.5px 1.5px 1px black;
