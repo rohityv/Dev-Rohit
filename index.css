@@ -404,7 +404,7 @@ text-align: left;
 .project-sections{
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 28rem 28rem 35rem 20rem;
+  grid-template-rows: 28rem 28rem 37rem 20rem;
   gap:10px;
   margin:0;
   padding: .5rem;
