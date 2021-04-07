@@ -438,6 +438,12 @@ text-align: left;
 
 /* ---project-1--- */
 
+.project-section .fetchApiResult{
+  width: 100%;margin: 1rem auto;
+  color: rgb(112, 160, 223);
+  overflow-x:hidden;
+}
+
 .fetchApiBtn{
   width: 12%;
 }
