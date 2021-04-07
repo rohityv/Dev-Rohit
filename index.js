@@ -6,14 +6,68 @@ togglebutton.addEventListener("click", function(){
   });
 
                           // For search btn
-    function SearchFunc(){
-      var ClickonSearch = document.getElementsByClassName("Search-btn")[0]
+function SearchFunc(){
+var ClickonSearch = document.getElementsByClassName("Search-btn")[0]
         ClickonSearch.classList.toggle("toggle-searchbtn")
     }
 
+
+
+
                   // -------JavaScript projects---------
 
+
+
+
                   // -----------Project-1-------
+
+var fetchApiBtn = document.querySelector('.fetchApiBtn');
+var apiResult = document.querySelector('#apiResult')
+
+fetchApiBtn.addEventListener('click', e => {
+
+   // url = "https://api.github.com/users"
+   url = "https://fakestoreapi.com/products"
+   // url = "https://api.covid19api.com/summary"
+
+fetch(url).then( (response) => {
+  return response.json()
+  .then((data) => {
+      const productResult = data.map((result)=> {
+        return result.category
+      })
+      apiResult.innerHTML = productResult;
+      console.log(data)
+    })
+  })
+})
+
+//  -----Example of post Api------
+
+fetchApiBtn.addEventListener('click', e => {
+
+   url = "http://dummy.restapiexample.com/api/v1/create"
+   data = {
+     name:'rohit',
+     surname:'Yaav'
+   }
+   parameters = {
+     method:'post',
+     header:{"Content-Type": "apllication/json"},
+     body:JSON.stringify(data)
+   }
+
+fetch(url, parameters).then( (response) => {
+  return response.json()
+  .then((data) => {
+      console.log(data)
+    })
+  })
+})
+
+
+
+                  // -----------Project-2-------
 
   var mathresult = document.getElementById("mathresult")
   function calculateFunc(){
@@ -43,7 +97,12 @@ togglebutton.addEventListener("click", function(){
               }
           }
   }
-            // -----------Project-2-------
+
+
+
+
+
+            // -----------Project-3-------
   var sentmessages = document.getElementById("sentmessages")
       function sendmessageFunc()
       {
@@ -53,3 +112,8 @@ togglebutton.addEventListener("click", function(){
                   sentmessages.appendChild(node)
                     typemessage.value = ("")
         }
+
+
+
+
+
