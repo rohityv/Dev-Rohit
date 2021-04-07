@@ -404,7 +404,7 @@ text-align: left;
 .project-sections{
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 28rem 28rem 37rem 20rem;
+  grid-template-rows: 28rem 28rem 28rem 37rem 12rem;
   gap:10px;
   margin:0;
   padding: .5rem;
@@ -434,7 +434,24 @@ text-align: left;
 }
 .project-sections p{
 }
-  /* ---project-1--- */
+
+
+/* ---project-1--- */
+
+.fetchApiBtn{
+  width: 12%;
+}
+.fetchApiBtn button{
+  width: 100%;
+  cursor: pointer;
+  color:red;font-weight: bold;
+}
+.fetchApiBtn button:hover{
+  border: 2px solid #ddd;
+}
+
+
+  /* ---project-2--- */
 .project-section .calculator{
   display: flex;
   flex-direction: column;
@@ -450,7 +467,7 @@ text-align: left;
 .calculator button{
   width: 20%;
 }
- /* ---project-2--- */
+ /* ---project-3--- */
 .message-box{
   display: flex;
   flex-direction: column;
@@ -467,7 +484,7 @@ text-align: left;
   width: 20%;
   margin-top: .3rem;
 }
- /* ---project-3--- */
+ /* ---project-4--- */
 .multiple-quiz{
   display: flex;
   flex-direction: column;
@@ -638,7 +655,7 @@ text-align: center;
 .project-sections{
     margin: 0;
     grid-template-columns: 100%;
-    grid-template-rows: 35rem 30rem 47rem 20rem;
+    grid-template-rows: 35rem 35rem 30rem 47rem 20rem;
 }
 .project-section{
   margin:0;
@@ -646,21 +663,42 @@ text-align: center;
 .project-sections h2{
   font-size: 2rem;
 }
+  
+/*   -----fetch api-----  */
+  
+  .fetchApiBtn{
+    width: 25%;
+ }
+  
+/*   ----calculator---- */
+  
 .project-section .calculator{
     width:70%
   }
 .calculator button{
   width:40%;
   }
+  
+/*   -----messaging app----- */
+  
 .project-section .message-box{
   width:70%
 }
 .message-box button{
   width:40%;
 }
+  
+/*   ------multiple choice quiz----- */
+  
 .project-section .multiple-quiz{
   width:100%
 }
+  
+/*   ----next project--- */
+  
+  
+  
+  
     /* -------Footer---------- */
 footer div a{
   width: 30%;
