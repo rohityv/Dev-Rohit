@@ -100,8 +100,9 @@ small{
   border-radius: 2px;
 }
 /* ------Toggle navbar----- */
+
 .toggle-navbar{
-  padding: .3rem;
+/*   padding: .3rem; */
   text-align: left;
   background-color: var(--nav-background);
   transform: translateX(-100%);
@@ -112,10 +113,18 @@ small{
   width: 20%;
   overflow: auto;
 }
+
+.toggle-navbar .vernavbar-home,
+.toggle-navbar .vernavbar-projects,
+.toggle-navbar .vernavbar-about,
+.toggle-navbar .vernavbar-contact{
+background: rgb(102, 102, 201);
+}
+
 .ver-navbar{
   list-style-type: none;
   height: auto;
-  padding: .3rem;
+/*   padding: .3rem; */
 }
 .ver-navbar li{
   margin: .3rem auto;
