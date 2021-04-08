@@ -128,7 +128,7 @@ background: rgb(102, 102, 201);
 }
 .ver-navbar li{
   margin: .3rem auto;
-  padding: .4rem;
+  padding: .8rem;
 }
 
 .ver-navbar li a{
@@ -138,8 +138,8 @@ background: rgb(102, 102, 201);
   font-size: 1.3rem;
   font-family: Nvabar;
 }
-.ver-navbar li:hover{
-  background-color:black;
+.ver-navbar li a:hover{
+  color:black;
   border-radius:.3rem;
 }
 .toggle-active{
