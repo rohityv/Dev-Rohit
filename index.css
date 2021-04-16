@@ -500,17 +500,65 @@ text-align: left;
   margin-top: .3rem;
 }
  /* ---project-4--- */
-.multiple-quiz{
-  display: flex;
-  flex-direction: column;
-  padding: .5rem;
-  height: 100%;
-  width:70%;
-  border: 1px solid grey;
-}
-.multiple-quiz img{
-  height: 100%;
-}
+
+/* ----------multiple choice quiz-------- */
+
+ .multiChoiceQuiz{
+   margin:2rem auto;padding:.5rem;
+   width:25rem;
+   min-height:auto;
+   background-color:hsl(206,92%,94%)
+ }
+ .multiChoiceQuiz .quzQuesAns{
+   background-color: #fff;
+   margin:.5rem;padding: .5rem;
+   border-radius: 1rem;
+   box-shadow: 0 1rem 1rem -.7rem rgba(0,0,0,.4);
+ }
+ .quzQuesAns h1{
+   font-size: 1.5rem;
+   font-weight: 400;
+ }
+ .quzQuesAns ul{
+   list-style-type: none;
+   margin: 1rem auto;padding:.3rem;
+ }
+ .quzQuesAns ul li{
+   padding: .3rem; margin: .3rem;
+ }
+ .quzQuesAns ul li .quizAns{
+   margin-right: .3rem;
+ }
+ .quzQuesAns .ansSubmitBtn,#quizScore button{
+   padding: .3rem 1.5rem;
+   display: block;
+   margin: auto;
+   font-size: 1.4rem;
+   background-color: rgb(0, 0, 255);
+   border-radius: .3rem;
+   color:#fff;
+   border: none;
+   outline: none;
+   cursor: pointer;
+ }
+ .quzQuesAns .ansSubmitBtn:hover{
+   background-color: #74b9ff;
+ }
+ .showScoreDiv{
+   display:none;
+ }
+ #quizScore h3{
+   text-align: center;
+   font-size: 1.5rem;
+ }
+ #quizScore button{
+   background: #55efc4;
+   color:#2d3436;
+ }
+ #quizScore button:hover{
+   background: #00b894;
+   color:#fff;
+ }
                            /* -------------Footer---------- */
 
 footer{
