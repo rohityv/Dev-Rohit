@@ -108,8 +108,34 @@
                   <h2>4 - Building a multiple choice quiz.</h2>
                   <p>In this project, I created an array with three objects and each object has two "key: value", and for looping, I used "for loop".</p>
               </div>
-              <div class = "multiple-quiz">
-                  <img src="Images/MCQuiz.png" alt="Loading..">
+              <div class="multiChoiceQuiz">
+
+                  <div class="quzQuesAns">
+                      <h1>Questions will come here</h1>
+                      <ul>
+                          <li>
+                              <input type="radio" name="answers" id="ans1" class = "quizInput">
+                              <label for="ans1" id = "option1">Answer Option</label>
+                          </li>
+                          <li>
+                              <input type="radio" name="answers" id="ans2" class = "quizInput">
+                              <label for="ans2" id = "option2">Answer Option</label>
+                          </li>
+                          <li>
+                              <input type="radio" name="answers" id="ans3" class = "quizInput">
+                              <label for="ans3" id = "option3">Answer Option</label>
+                          </li>
+                          <li>
+                              <input type="radio" name="answers" id="ans4" class = "quizInput">
+                              <label for="ans4" id = "option4">Answer Option</label>
+                          </li>
+                      </ul>
+
+                      <button type="submit" id="quizSubmitBtn" class="ansSubmitBtn">Submit</button>
+                  </div>
+
+                  <div class="showScoreDiv" id = "quizScore" ></div>
+
               </div>
           </div>
         
