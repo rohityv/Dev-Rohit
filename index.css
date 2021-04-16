@@ -529,7 +529,7 @@ text-align: left;
  .quzQuesAns ul li .quizAns{
    margin-right: .3rem;
  }
- .quzQuesAns .ansSubmitBtn,#quizScore button{
+ .quzQuesAns .ansSubmitBtn, #quizScore button{
    padding: .3rem 1.5rem;
    display: block;
    margin: auto;
