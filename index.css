@@ -526,7 +526,7 @@ text-align: left;
  .quzQuesAns ul li{
    padding: .3rem; margin: .3rem;
  }
- .quzQuesAns ul li .quizAns{
+ .quzQuesAns ul li .quizInput{
    margin-right: .3rem;
  }
  .quzQuesAns .ansSubmitBtn, #quizScore button{
