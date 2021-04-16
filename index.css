@@ -550,6 +550,7 @@ text-align: left;
  #quizScore h3{
    text-align: center;
    font-size: 1.5rem;
+    border: none;
  }
  #quizScore button{
    background: #55efc4;
