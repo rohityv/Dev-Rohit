@@ -753,8 +753,8 @@ text-align: center;
   
 /*   ------multiple choice quiz----- */
   
-.project-section .multiple-quiz{
-  width:100%
+.multiChoiceQuiz{
+   width:100%;
 }
   
 /*   ----next project--- */
