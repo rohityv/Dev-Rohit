@@ -114,6 +114,131 @@ fetch(url, parameters).then( (response) => {
         }
 
 
+//           ----------Project - 4 ----------------
+
+var questions = [
+     {
+          question: "Why so many jobless people in india ?",
+          a: 'They are not capable',
+          b: 'They are less qualified',
+          c: "They don't have skills",
+          d: 'There is no job available in market',
+          ans: "ans3"
+     },
+
+     {
+          question: "Do i get a job ?, If i'm unemployed for past four months.",
+          a: 'No',
+          b: 'Yes',
+          c: "Maybe",
+          d: 'Maybe not',
+          ans: "ans2"
+     },
+
+     {
+          question: "What color are mangos ?",
+          a: 'green/yellow',
+          b: 'blue',
+          c: "red",
+          d: 'pink',
+          ans: "ans1"
+     },
+
+     {
+          question: "What color are strawberries?",
+          a: 'green',
+          b: 'pink',
+          c: "yellow",
+          d: 'red',
+          ans: "ans4"
+     }
+]
 
 
 
+var quizQuestion = document.querySelector('.quzQuesAns h1');
+
+var option1 = document.querySelector('#option1')
+var option2 = document.querySelector('#option2')
+var option3 = document.querySelector('#option3')
+var option4 = document.querySelector('#option4')
+
+var quizSubmitBtn = document.querySelector('#quizSubmitBtn')
+
+var quizInputs = document.querySelectorAll('.quizInput')
+
+var quizScore = document.querySelector('#quizScore')
+
+
+let questioncount = 0;
+let score = 0;
+const loadQueAndOptions = () => {
+
+     const questionList = questions[questioncount]
+
+     quizQuestion.innerHTML = questionList.question
+     option1.innerHTML = questionList.a
+     option2.innerHTML = questionList.b
+     option3.innerHTML = questionList.c
+     option4.innerHTML = questionList.d
+
+}
+loadQueAndOptions()
+
+
+const whichInputUserClicked = () => {
+     let userResponse;
+     quizInputs.forEach((input, i) => {
+          if (input.checked) {
+               userResponse = input.id;
+          }
+     })
+     return userResponse
+}
+
+const deSelectInput = () => {
+     quizInputs.forEach((input, i) => {
+          input.checked = false;
+     })
+}
+
+quizSubmitBtn.addEventListener('click', e => {
+
+     const userResponseResult = whichInputUserClicked()
+
+     if (userResponseResult === questions[questioncount].ans) {
+          score++
+     }
+     questioncount++;
+
+
+     deSelectInput();
+
+
+
+     if (questioncount < questions.length) {
+          loadQueAndOptions()
+     } else {
+
+          quizQuestion.innerHTML = 'Thank You!'
+          quizQuestion.style = 'text-align:center'
+
+          quizSubmitBtn.style = 'display:none'
+
+          document.querySelector('#ans1').style = "display:none"
+          document.querySelector('#ans2').style = "display:none"
+          document.querySelector('#ans3').style = "display:none"
+          document.querySelector('#ans4').style = "display:none"
+
+          option1.style = "display:none"
+          option2.style = "display:none"
+          option3.style = "display:none"
+          option4.style = "display:none"
+
+          quizScore.innerHTML = `
+          <h3> You Scored : ${score}/${questions.length} </h3>
+          <button class = "btn" onclick = "location.reload()" >Try Again</button>
+          `;
+          quizScore.classList.remove('showScoreDiv')
+     }
+})
