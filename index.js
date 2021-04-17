@@ -242,3 +242,96 @@ quizSubmitBtn.addEventListener('click', e => {
           quizScore.classList.remove('showScoreDiv')
      }
 })
+
+
+// ---------------Project-5-----------
+
+
+               var slides = document.querySelectorAll('.slide');
+               var btns = document.querySelectorAll('.btn')
+
+
+               // let currentSlide = 1;
+
+               // ----javascript for image slider   manual navigation-----
+
+               var manualNav = function (manual) {
+
+                    slides.forEach((slide, i) => {
+                         slide.classList.remove('active')
+                    })
+
+                    btns.forEach((btn, i) => {
+                         btn.classList.remove('active')
+                    })
+
+                    slides[manual].classList.add('active');
+
+                    btns[manual].classList.add('active');
+
+               }
+
+               btns.forEach((btn, i) => {
+                    btn.addEventListener('click', () => {
+                         manualNav(i);
+                         // currentSlide = i;
+                    })
+               })
+
+               // ----javascript for image slider   auto navigation-----
+
+               // var repeat = function () {
+               //
+               //      let active = document.getElementsByClassName('active');
+               //      let i = 1;
+               //
+               //      var repeater = () => {
+               //
+               //           setTimeout(function () {
+               //
+               //           [...active].forEach((activeSlide) => {
+               //                activeSlide.classList.remove('active')
+               //           })
+               //
+               //                slides[i].classList.add('active')
+               //                btns[i].classList.add('active')
+               //                i++
+               //
+               //                if (slides.length == i) {
+               //                     i = 0;
+               //                }
+               //                if (i >= slides.length) {
+               //                     return;
+               //                }
+               //
+               //                repeater()
+               //
+               //           }, 2000)
+               //
+               //      }
+               //      repeater()
+               // }
+               // repeat()
+
+
+               // ----javascript for image slider   auto navigation-----
+
+
+var images =
+     ["Images/bi-about.jpg",
+          "Images/bi-contact.jpg",
+          "Images/bi-jsprojects.jpg"]
+
+
+var i = 0;
+
+function automaticFunc() {
+     var slideImage = document.getElementById('slideImage').src = images[i]
+     if (i < (images.length - 1)) {
+          i++;
+     } else {
+          i = 0;
+     }
+}
+
+setInterval(automaticFunc, 2500);
