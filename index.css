@@ -565,6 +565,123 @@ text-align: left;
    background: #00b894;
    color:#fff;
  }
+
+
+
+/* -------project - 5----------*/
+
+ /* ---------manual carousel------- */
+
+ .carsousel{
+   /* background-color: black; */
+   padding: 1rem 0;
+   position: relative;
+   width: 20rem;
+   margin: auto 0;
+ }
+ .carsousel .buttons{
+   display: none;
+   position: absolute;
+   top:50%;
+   transform: translateY(-50%);
+
+   box-shadow: none;
+   border: none;
+   padding:0;
+ }
+ .carsousel .nextBtn{
+   right:0;
+ }
+ .carsousel .prevBtn{
+   left:0;
+ }
+ .carsousel .navigation{
+   position: absolute;
+   bottom:1rem;left:50%;
+   transform: translateX(-50%);
+ }
+ .navigation .btn{
+   border:0;outline: none;
+   border-radius: 50%;
+   background:lightblue;
+   padding: .4rem;margin: 0 .4rem;
+   cursor: pointer;
+
+   box-shadow: none;
+ }
+ .navigation .active{
+   background: blue;
+ }
+ .carsousel .img-slider{
+   /* background-color: red; */
+   position:relative;
+   height: 20rem;
+   width: 20rem;
+   margin: auto;
+ }
+ .img-slider .slide{
+   /* background-color: blue; */
+   padding: 1rem 0;
+   position: absolute;
+   width:100%;
+   height: 100%;
+
+   clip-path: circle(0% at 0 50%) ;
+   /* from clip path generator */
+ }
+ .img-slider .slide.active{
+   clip-path: circle(150% at 0 50%) ;
+   /* transition: clip-path 2s ; */
+   animation-name: fade;
+   animation-duration: 1.5s;
+ }
+
+ @keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+ .slide img{
+   width:100%;
+   height: 100%;
+   border-radius: 5px;
+ }
+ .slide .info{
+   position: absolute;
+   top:1rem;left:1rem;
+   color:white;
+ }
+ .info h2{
+   text-transform: uppercase;
+ }
+
+ /* -----automatic carousel----- */
+
+ .slideImages{
+   height: 20rem;
+   width: 20rem;
+   margin: 2rem 0;
+   padding: 1rem 0;
+   /* background: #f0f0f0 */
+ }
+ .slideImages .slideImage{
+   height: 100%;
+   width: 100%;
+ }
+ .slideImages img{
+   height: 100%;
+   width: 100%;
+   animation: zoom 1s ease;
+   border-radius: .3rem;
+ }
+ @keyframes zoom {
+   0%{transform:scale(2);opacity: 0;}
+   100%{transform:scale(1);opacity: 1;}
+ }
+
+
+
+
                            /* -------------Footer---------- */
 
 footer{
