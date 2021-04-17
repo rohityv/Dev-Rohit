@@ -193,7 +193,8 @@ button, input{
                         /* ------------Home------------ */
 .Home-header{
   min-height: 92vh;
-  background-image: linear-gradient(rgba(0,0,100,0.8), rgba(0,0,100,0.8)), url(Images/rohit-pic.png);
+  background-image: linear-gradient(rgba(0,0,100,0.8),
+    rgba(0,0,100,0.8)), url(Images/rohit-pic.png);
   background-position:center;
   background-size: 100% 100%,23rem 21rem ;
   background-repeat: no-repeat;
@@ -209,7 +210,7 @@ button, input{
   margin: 0 15% 0 15%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 28rem 22rem;
+  grid-template-rows: 30rem 22rem;
   gap:10px;
 }
 .grid-sections .grid-section{
@@ -251,7 +252,8 @@ button, input{
 
 .About-header{
   min-height: 46vh;
-  background-image: linear-gradient(rgba(0, 0, 100, .7),rgba(0, 0, 100,.7)), url(Images/bi-about.jpg);
+  background-image: linear-gradient(rgba(0, 0, 100, .7)
+    ,rgba(0, 0, 100,.7)), url(Images/bi-about.jpg);
   background-position:center,50% 10%;
   background-size: 100% 100%,40% 50%;
   background-repeat: no-repeat;
@@ -304,7 +306,8 @@ text-align: left;
 
 .Contact-header{
   min-height: 46vh;
-  background-image: linear-gradient(rgba(0, 0, 100, .7),rgba(0, 0, 100,.7)), url(Images/bi-contact.jpg);
+  background-image: linear-gradient(rgba(0, 0, 100, .7)
+    ,rgba(0, 0, 100,.7)), url(Images/bi-contact.jpg);
   background-position:center,50% 12%;
   background-size: 100% 100%,40% 50%;
   background-repeat: no-repeat;
@@ -346,10 +349,12 @@ text-align: left;
   width: 70%;
   border:1px solid lightgrey;
 }
-.comment-form input,.comment-form button,.comment-form textarea,.comment-form h2{
+.comment-form input,.comment-form button
+,.comment-form textarea,.comment-form h2{
   margin-bottom: auto;
 }
-.comment-form input,.comment-form button,.comment-form textarea{
+.comment-form input,.comment-form button
+,.comment-form textarea{
   background-color: #f0f0f0;
   box-shadow: none;
 }
@@ -782,14 +787,14 @@ text-align: left;
 .grid-sections{
   margin: 0 2% 0 2%;
   grid-template-columns: 100%;
-  grid-template-rows: 25rem 20rem 25rem
+  grid-template-rows: 35rem 20rem 25rem
     15rem 17rem 15rem;
   }
     /* ----About----- */
 .About-Contents{
   margin:0 2% 0 2%;
   grid-template-columns:1fr;
-  grid-template-rows: 27rem 20rem;
+  grid-template-rows: 33rem 20rem;
 }
 .about-right{
 text-align: center;
