@@ -511,13 +511,12 @@ text-align: left;
    margin:2rem auto;padding:.5rem;
    width:25rem;
    min-height:auto;
-   background-color:hsl(206,92%,94%)
+/*    background-color:hsl(206,92%,94%) */
  }
  .multiChoiceQuiz .quzQuesAns{
-   background-color: #fff;
+   background-color: #f0f0f0;
    margin:.5rem;padding: .5rem;
-   border-radius: 1rem;
-   box-shadow: 0 1rem 1rem -.7rem rgba(0,0,0,.4);
+   border:1px solid grey;
  }
  .quzQuesAns h1{
    font-size: 1.5rem;
