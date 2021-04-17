@@ -508,14 +508,14 @@ text-align: left;
 /* ----------multiple choice quiz-------- */
 
  .multiChoiceQuiz{
-   margin:2rem auto;padding:.5rem;
+   margin:2rem 0;padding:.5rem 0;
    width:25rem;
    min-height:auto;
 /*    background-color:hsl(206,92%,94%) */
  }
  .multiChoiceQuiz .quzQuesAns{
    background-color: #f0f0f0;
-   margin:.5rem;padding: .5rem;
+   margin:.5rem 0;padding: .5rem;
    border:1px solid grey;
  }
  .quzQuesAns h1{
