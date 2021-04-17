@@ -417,7 +417,8 @@ text-align: left;
 .project-sections{
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 28rem 28rem 28rem 37rem 12rem;
+  grid-template-rows: 28rem 28rem 28rem 37rem
+    65rem 12rem;
   gap:10px;
   margin:0;
   padding: .5rem;
@@ -797,7 +798,8 @@ footer div a:hover{
 .grid-sections{
   margin: 0 2% 0 2%;
   grid-template-columns: 100%;
-  grid-template-rows: 25rem 20rem 25rem 15rem 17rem 15rem;
+  grid-template-rows: 25rem 20rem 25rem
+    15rem 17rem 15rem;
   }
     /* ----About----- */
 .About-Contents{
@@ -841,7 +843,8 @@ text-align: center;
 .project-sections{
     margin: 0;
     grid-template-columns: 100%;
-    grid-template-rows: 35rem 35rem 30rem 41rem 20rem;
+    grid-template-rows: 35rem 35rem 30rem 41rem
+      65rem 12rem;
 }
 .project-section{
   margin:0;
